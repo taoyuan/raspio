@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/taoyuan/raspio#readme",
   "dependencies": {
+    "lodash": "^3.10.1",
     "wiring-pi": "^2.1.0"
   }
 }
