@@ -1,12 +1,12 @@
 "use strict";
 
 var async = require('async');
-var wpi = require('../').wpi;
+//var wpi = require('../').wpi;
 var LED = require('../').LED;
 
-wpi.setup('wpi');
+//wpi.setup('gpio');
 
-var led = new LED([0, 1, 2], true);
+var led = new LED([17, 18, 27], true);
 
 led.brightness(10);
 

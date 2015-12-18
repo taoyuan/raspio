@@ -2,4 +2,5 @@
 
 exports.wpi = require('./lib/wpi');
 
-exports.LED = require('./lib/led');
+exports.LED = exports.Led = require('./lib/led');
+exports.Button = require('./lib/button');

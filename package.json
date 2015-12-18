@@ -28,7 +28,7 @@
   "homepage": "https://github.com/taoyuan/raspio#readme",
   "dependencies": {
     "lodash": "^3.10.1",
-    "wiring-pi": "^2.1.0"
+    "pigpio": "^0.2.0"
   },
   "devDependencies": {
     "async": "^1.5.0"
