@@ -1,6 +1,6 @@
 # raspio
 
-> A raspberry GPIO advanced library for Node.js
+> A raspberry GPIO advanced library based on [pigpio](https://github.com/fivdi/pigpi) for node.js
 
 ## Installation
 
@@ -29,4 +29,6 @@ Note that the `make` command takes a while to complete so please be patient.
 
 ### Step 2
 
-
+```sh
+npm i raspio
+```
