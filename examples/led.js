@@ -1,42 +1,39 @@
 "use strict";
 
 var async = require('async');
-//var wpi = require('../').wpi;
-var LED = require('../').LED;
+var Led = require('../').Led;
 
-//wpi.setup('gpio');
+var led = new Led([0, 1, 2], true);
 
-var led = new LED([17, 18, 27], true);
-
-led.brightness(10);
+led.brightness(100);
 
 async.series([
   function (cb) {
-    led.light(LED.red);
+    led.light(Led.red);
     setTimeout(cb, 2000);
   },
   function (cb) {
-    led.light(LED.green);
+    led.light(Led.green);
     setTimeout(cb, 2000);
   },
   function (cb) {
-    led.light(LED.blue);
+    led.light(Led.blue);
     setTimeout(cb, 2000);
   },
   function (cb) {
-    led.blink(LED.cyan, 500);
+    led.blink(Led.cyan, 500);
     setTimeout(cb, 5000);
   },
   function (cb) {
-    led.fadeup(LED.white, 10);
+    led.fadeup(Led.white, 10);
     setTimeout(cb, 5000);
   },
   function (cb) {
-    led.fadedown(LED.white, 10);
+    led.fadedown(Led.white, 10);
     setTimeout(cb, 5000);
   },
   function (cb) {
-    led.breath(LED.green, 10);
+    led.breath(Led.green, 10);
     setTimeout(cb, 5000);
   }
 ], function () {

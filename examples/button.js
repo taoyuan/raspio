@@ -2,7 +2,7 @@
 
 var Button = require('../').Button;
 
-var button = new Button(5, {invert: true});
+var button = new Button(21, {invert: true});
 
 button.click(function (clicks) {
   console.log('clicks', clicks);
