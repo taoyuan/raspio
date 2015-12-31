@@ -1,6 +1,6 @@
 {
   "name": "raspio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A raspberry GPIO advanced library based on [pigpio](https://github.com/fivdi/pigpi) for node.js",
   "main": "lib/raspi.js",
   "scripts": {
