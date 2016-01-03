@@ -4,6 +4,14 @@ var Button = require('../').Button;
 
 var button = new Button(21, {invert: true});
 
+button.on('down', function () {
+  console.log('down');
+});
+
+button.on('up', function () {
+  console.log('up');
+});
+
 button.click(function (clicks) {
   console.log('clicks', clicks);
 });
