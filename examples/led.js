@@ -35,6 +35,10 @@ async.series([
   function (cb) {
     led.breath(Led.green, 10);
     setTimeout(cb, 5000);
+  },
+  function (cb) {
+    led.light(Led.black);
+    setTimeout(cb, 5000);
   }
 ], function () {
 });
