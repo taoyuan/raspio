@@ -1,6 +1,6 @@
 {
   "name": "raspio",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A raspberry GPIO library based on [wiring-pi](https://github.com/eugeneware/wiring-pi) for node.js",
   "main": "index.js",
   "scripts": {
