@@ -7,7 +7,7 @@ if [[ "$unamestr" == 'Linux' ]]; then
 fi
 
 if [[ $platform == 'linux' ]]; then
-   npm i taoyuan/wiring-pi
+   npm i wiring-pi
 else
    tput setaf 1; echo "WARNING: 'wiring-pi' is required, but it can only be installed in linux@rpi."
 fi
