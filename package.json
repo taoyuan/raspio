@@ -4,7 +4,6 @@
   "description": "A raspberry GPIO library based on [wiring-pi](https://github.com/eugeneware/wiring-pi) for node.js",
   "main": "index.js",
   "scripts": {
-    "install": "/bin/bash ./install.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,7 +27,8 @@
   },
   "homepage": "https://github.com/taoyuan/raspio#readme",
   "dependencies": {
-    "lodash": "^4.6.1"
+    "lodash": "^4.6.1",
+    "wiring-pi": "^2.1.1"
   },
   "devDependencies": {
     "async": "^1.5.2"
