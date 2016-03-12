@@ -32,5 +32,8 @@
   },
   "devDependencies": {
     "async": "^1.5.2"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
   }
 }
