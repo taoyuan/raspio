@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/taoyuan/raspio#readme",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^4.6.1"
   },
   "devDependencies": {
-    "async": "^1.5.0"
+    "async": "^1.5.2"
   }
 }
