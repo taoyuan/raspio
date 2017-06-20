@@ -1,9 +1,13 @@
 # raspio
 
-> A raspberry GPIO library based on [wiring-pi](https://github.com/eugeneware/wiring-pi) for node.js
+> A raspberry advanced GPIO library based on [pigpio](https://github.com/fivdi/pigpio) for node.js
 
 ## Installation
 
 ```sh
 npm i raspio --save
 ```
+
+## Examples
+
+See `examples`

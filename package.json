@@ -1,8 +1,8 @@
 {
   "name": "raspio",
   "version": "1.1.0",
-  "description": "A raspberry GPIO library based on [wiring-pi](https://github.com/eugeneware/wiring-pi) for node.js",
-  "main": "index.js",
+  "description": "A raspberry advanced GPIO library based on [pigpio](https://github.com/fivdi/pigpio) for node.js",
+  "main": "lib/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,7 @@
     "pi",
     "gpio",
     "advanced",
-    "wiring",
-    "wiringpi"
+    "pigpio"
   ],
   "author": "Tao Yuan",
   "license": "MIT",
@@ -27,13 +26,7 @@
   },
   "homepage": "https://github.com/taoyuan/raspio#readme",
   "dependencies": {
-    "lodash": "^4.6.1",
-    "wiring-pi": "^2.1.1"
-  },
-  "devDependencies": {
-    "async": "^1.5.2"
-  },
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "lodash": "^4.17.4",
+    "pigpio": "^0.6.0"
   }
 }

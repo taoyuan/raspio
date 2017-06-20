@@ -1,46 +1,40 @@
 "use strict";
 
-var async = require('async');
-var Led = require('../').Led;
+const Led = require('..').Led;
+const c = require('./constants');
 
-var led = new Led([0, 1, 2], true);
+const delay = ms => new Promise(resolve => setTimeout(() => resolve(), ms));
 
+const led = new Led([c.PIN_RED, c.PIN_GREEN, c.PIN_BLUE], {invert: true, pwm: true});
 led.brightness(100);
+(async () => {
+  led.light(Led.red);
+  await delay(2000);
 
-async.series([
-  function (cb) {
-    led.light(Led.red);
-    setTimeout(cb, 2000);
-  },
-  function (cb) {
-    led.light(Led.green);
-    setTimeout(cb, 2000);
-  },
-  function (cb) {
-    led.light(Led.blue);
-    setTimeout(cb, 2000);
-  },
-  function (cb) {
-    led.blink(Led.cyan, 500);
-    setTimeout(cb, 5000);
-  },
-  function (cb) {
-    led.fadeup(Led.white, 10);
-    setTimeout(cb, 5000);
-  },
-  function (cb) {
-    led.fadedown(Led.white, 10);
-    setTimeout(cb, 5000);
-  },
-  function (cb) {
-    led.breath(Led.green, 10);
-    setTimeout(cb, 5000);
-  },
-  function (cb) {
-    led.light(Led.black);
-    setTimeout(cb, 5000);
-  }
-], function () {
-});
+  led.light(Led.green);
+  await delay(2000);
+
+  led.light(Led.blue);
+  await delay(2000);
+
+  led.blink(Led.cyan, 500);
+  await delay(5000);
+
+  led.fadeup(Led.white, 10);
+  await delay(5000);
+
+  led.fadedown(Led.white, 10);
+  await delay(5000);
+
+  led.breath(Led.green, 10);
+  await delay(5000);
+
+  led.light(Led.black);
+  await delay(5000);
+})();
+
+
+
+
 
 
