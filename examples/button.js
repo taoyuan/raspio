@@ -1,9 +1,9 @@
 "use strict";
 
 const Button = require('..').Button;
-const c = require('./constants');
+const pins = require('./pins').pins;
 
-const button = new Button(c.PIN_BTN, {invert: true});
+const button = new Button(pins.PIN_BTN, {invert: true});
 
 button.on('down', function () {
   console.log('down');

@@ -1,11 +1,11 @@
 "use strict";
 
 const Led = require('..').Led;
-const c = require('./constants');
+const pins = require('./pins').pins;
 
 const delay = ms => new Promise(resolve => setTimeout(() => resolve(), ms));
 
-const led = new Led([c.PIN_RED, c.PIN_GREEN, c.PIN_BLUE], {invert: true, pwm: true});
+const led = new Led([pins.PIN_RED, pins.PIN_GREEN, pins.PIN_BLUE], {invert: true, pwm: true});
 led.brightness(100);
 (async () => {
   led.light(Led.red);
