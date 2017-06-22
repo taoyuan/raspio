@@ -3,7 +3,7 @@
 const Button = require('..').Button;
 const pins = require('./pins').pins;
 
-const button = new Button(pins.PIN_BTN, {invert: true});
+const button = new Button(pins.PIN_BTN, {invert: true, uri: 'raspberrypi.local'});
 
 button.on('down', function () {
   console.log('down');

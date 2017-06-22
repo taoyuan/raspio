@@ -5,9 +5,11 @@ const pins = require('./pins').pins;
 
 const delay = ms => new Promise(resolve => setTimeout(() => resolve(), ms));
 
-const led = new Led([pins.PIN_RED, pins.PIN_GREEN, pins.PIN_BLUE], {invert: true, pwm: true});
-led.brightness(100);
+const led = new Led([pins.PIN_RED, pins.PIN_GREEN, pins.PIN_BLUE], {invert: true, pwm: true, uri: 'raspberrypi.local'});
+
 (async () => {
+  await led.brightness(100);
+
   led.light(Led.red);
   await delay(2000);
 
