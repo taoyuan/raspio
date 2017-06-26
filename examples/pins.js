@@ -42,6 +42,6 @@ function setup(mode) {
 
 exports.setup = setup;
 
-const mode = process.argv[2] || 'bcm';
+const mode = process.argv[2] || 'wpi';
 console.log('Using pinout: ' + mode);
 setup(mode);
