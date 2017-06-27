@@ -1,6 +1,6 @@
 # raspio
 
-> A raspberry advanced GPIO library based on [pigpio](https://github.com/fivdi/pigpio) for node.js
+> A raspberry advanced GPIO library for node.js
 
 ## Installation
 

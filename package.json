@@ -1,7 +1,7 @@
 {
   "name": "raspio",
   "version": "2.1.1",
-  "description": "A raspberry advanced GPIO library based on pigpio for node.js",
+  "description": "A raspberry advanced GPIO library for node.js",
   "main": "lib/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,13 +12,12 @@
   },
   "keywords": [
     "raspberry",
-    "rasp",
-    "berry",
+    "raspi",
     "pi",
     "gpio",
     "advanced",
-    "pigpio",
-    "js-pigpio"
+    "pi-blaster",
+    "onoff"
   ],
   "author": "Tao Yuan",
   "license": "MIT",
@@ -28,7 +27,7 @@
   "homepage": "https://github.com/taoyuan/raspio#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "js-pigpio": "^1.5.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "onoff": "^1.1.3"
   }
 }
