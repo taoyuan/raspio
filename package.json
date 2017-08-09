@@ -27,6 +27,7 @@
   "homepage": "https://github.com/taoyuan/raspio#readme",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "detect-rpi": "^1.2.0",
     "lodash": "^4.17.4",
     "onoff": "^1.1.3"
   }
