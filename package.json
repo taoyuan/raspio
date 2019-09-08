@@ -28,6 +28,6 @@
   "dependencies": {
     "bluebird": "^3.5.2",
     "lodash": "^4.17.10",
-    "onoff": "^3.2.1"
+    "onoff": "^4.1.4"
   }
 }
